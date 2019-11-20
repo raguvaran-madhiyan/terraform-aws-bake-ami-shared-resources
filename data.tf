@@ -98,6 +98,7 @@ data "aws_iam_policy_document" "codebuild_s3" {
 
     actions = [
       "s3:GetObject",
+      "s3:ListBucket",
     ]
 
     resources = [
